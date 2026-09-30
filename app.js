@@ -23,10 +23,13 @@
 
   const sidebar = (active) => `
     <div class="sb-top">
-      <a class="brand" href="#/yenilikler" aria-label="Yukato Nexus Tedarikçi Bülteni">
-        <img src="${A('bd2c6')}" width="47.65" height="36.83" alt="">
-        <div class="brand-word"><img src="${A('42593')}" width="75" height="22.44" alt="yukato"><span>NEXUS TEDARİKÇİ BÜLTENİ</span></div>
-      </a>
+      <div class="sb-bar">
+        <a class="brand" href="#/yenilikler" aria-label="Yukato Nexus Tedarikçi Bülteni">
+          <img src="${A('bd2c6')}" width="47.65" height="36.83" alt="">
+          <div class="brand-word"><img src="${A('42593')}" width="75" height="22.44" alt="yukato"><span>NEXUS TEDARİKÇİ BÜLTENİ</span></div>
+        </a>
+        <button class="menu-btn" id="menu-btn" aria-label="Menüyü aç" aria-expanded="false" aria-controls="sidebar"><span></span><span></span><span></span></button>
+      </div>
       <img class="sb-rule" src="${A('2872c')}" height="1" alt="">
       ${NAV.map((g) => `
         <nav class="nav-list" aria-label="${g.label}">
@@ -427,6 +430,12 @@
     const id = (location.hash.replace(/^#\//, '') || 'yenilikler');
     const key = PAGES[id] ? id : 'yenilikler';
     sb.innerHTML = sidebar(key);
+    sb.classList.remove('open');
+    document.getElementById('menu-btn').addEventListener('click', (e) => {
+      const o = sb.classList.toggle('open');
+      e.currentTarget.setAttribute('aria-expanded', o);
+      e.currentTarget.setAttribute('aria-label', o ? 'Menüyü kapat' : 'Menüyü aç');
+    });
     ct.className = 'content ' + (GAPS[key] || '');
     ct.innerHTML = PAGES[key]();
     document.title = `${TITLES[key]} · Yukato Nexus Tedarikçi Bülteni`;
