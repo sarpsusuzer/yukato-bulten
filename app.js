@@ -302,7 +302,6 @@
   const ROADMAP = [
     { year: '2026', title: 'Eksik Teslimat &amp; Red Analizi', desc: 'Teslim edilen ürünlerde eksik, hasar ve red durumlarının anlık takibi. Tedarikçiye otomatik bildirim ve kök neden analizi.', tags: ['Operasyonel Hız', 'Kalite Yönetimi'] },
     { year: '2027', title: 'Yard Management', desc: 'Depo sahası içi araç hareketlerinin dijital yönetimi. Park alanı, bekleme süresi ve saha içi yönlendirme optimizasyonu.', tags: ['Maliyet Düşürücü', 'Saha Verimliliği'] },
-    { year: '2027', title: 'Driver Sourcing', desc: 'Nakliye firmaları için sürücü havuzu oluşturma ve eşleştirme. Performans bazlı sürücü önerisi ve kapasite planlama.', tags: ['Kapasite Artışı', 'İnsan Kaynağı'] },
     { year: '2028', title: 'Master Schedule Board', desc: 'Tüm tedarik zinciri operasyonlarının tek bir ekrandan planlanması. Depo, araç ve rampa kaynaklarının entegre takvim görünümü.', tags: ['Stratejik Planlama', 'Tam Görünürlük'] },
   ];
   const OPTIONS = ['Eksik Teslimat &amp; Red Analizi', 'Yard Management', 'Driver Sourcing'];
