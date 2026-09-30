@@ -135,7 +135,6 @@
     ],
     nexus: [
       [ic('81e7f'), '%94 Otomatik Eşleşme', 'Hatasız akıllı araç-yük eşleşmesi'],
-      [ic('53663'), '2.4 sn Ortalama Atama', 'Yapay zeka rota optimizasyonu'],
       [ic('dece5'), 'Haftalık Tasarruf', 'Önlenen demuraj ve bekleme maliyeti'],
     ],
     problems: [
