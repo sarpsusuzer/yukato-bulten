@@ -303,7 +303,7 @@
     { year: '2027', title: 'Yard Management', desc: 'Depo sahası içi araç hareketlerinin dijital yönetimi. Park alanı, bekleme süresi ve saha içi yönlendirme optimizasyonu.', tags: ['Maliyet Düşürücü', 'Saha Verimliliği'] },
     { year: '2028', title: 'Master Schedule Board', desc: 'Tüm tedarik zinciri operasyonlarının tek bir ekrandan planlanması. Depo, araç ve rampa kaynaklarının entegre takvim görünümü.', tags: ['Stratejik Planlama', 'Tam Görünürlük'] },
   ];
-  const OPTIONS = ['Eksik Teslimat &amp; Red Analizi', 'Yard Management', 'Driver Sourcing'];
+  const OPTIONS = ['Eksik Teslimat &amp; Red Analizi', 'Yard Management'];
   let vote = 0;
   let voted = false;
 
